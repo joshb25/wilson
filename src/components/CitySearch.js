@@ -122,7 +122,7 @@ export default function CitySearch(){
                     required
                     
                 />
-                <button type="submit" className="btn1"><img src="./searchw.png" className="searchIcon"/></button>
+                <button type="submit" className="btn1"><img src="searchw.png" className="searchIcon"/></button>
             </form>
         </header>
 

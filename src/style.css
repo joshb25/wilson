@@ -47,6 +47,11 @@ body {
   height: 721px;
 }
 
+.info-cont,
+.two-day-forecast {
+  cursor: default;
+}
+
 .info-cont {
   border: hidden var(--fc-primary);
   border-radius: 5px;
@@ -54,14 +59,6 @@ body {
   height: 36.5;
   margin: 8em auto 1em auto;
   background-color: #36393a99;
-  transition: transform ease 1s, background-color ease 1s, border ease 1s,
-    color ease 1s;
-}
-
-.info-cont:hover {
-  transform: scale(1.1, 1.1);
-  background-color: var(--fc-hover);
-  border: hidden var(--fc-hover);
 }
 
 .additional-info {
@@ -82,8 +79,6 @@ body {
   padding: 0 0.5em;
   width: 200px;
   height: 25px;
-  transition: transform ease 1s, background-color ease 1s, border ease 1s,
-    color ease 1s;
 }
 
 .humid,
@@ -238,15 +233,6 @@ header {
   background-color: var(--fc-primary);
   border: hidden var(--fc-primary);
   border-radius: 5px;
-  transition: transform ease 1s, background-color ease 1s, border ease 1s,
-    color ease 1s;
-}
-
-.day1:hover,
-.day2:hover {
-  transform: scale(1.1, 1.1);
-  background-color: var(--fc-hover);
-  border: hidden var(--fc-hover);
 }
 
 .alert-container {
@@ -312,6 +298,32 @@ header {
 }
 
 /*234*/
+@media screen and (orientation: landscape) {
+  .info-cont {
+    transition: transform ease 1s, background-color ease 1s, border ease 1s,
+      color ease 1s;
+  }
+
+  .info-cont:hover {
+    transform: scale(1.1, 1.1);
+    background-color: var(--fc-hover);
+    border: hidden var(--fc-hover);
+  }
+
+  .day1,
+  .day2 {
+    transition: transform ease 1s, background-color ease 1s, border ease 1s,
+      color ease 1s;
+  }
+
+  .day1:hover,
+  .day2:hover {
+    transform: scale(1.1, 1.1);
+    background-color: var(--fc-hover);
+    border: hidden var(--fc-hover);
+  }
+}
+
 @media screen and (orientation: portrait) {
   header {
     margin-top: 2.5em;
@@ -361,7 +373,7 @@ header {
   .additional-info {
     font-size: var(--fs-h3);
     width: 70%;
-    height: 10%;
+    height: 70px;
     border: hidden var(--fc-primary);
     border-radius: 5px;
     background-color: #36393a99;

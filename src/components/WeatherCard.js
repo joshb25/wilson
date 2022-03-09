@@ -84,13 +84,13 @@ export default function WeatherCard({condition,code,icon,tempInF,feelsLikeF,temp
                     <h1 className="dates">{getDay(secondDate)}</h1>
                     <h2 className="title title-fc">{secondMaxTempF} {secondMaxTempC}</h2>
                      <img src={secondIcon}/>
-                    <h3 className="subTitle-1">{secondCondition}</h3>
+                    <h3 className="subTitle-1 condition-f">{secondCondition}</h3>
                 </div>
                 <div className="day2">
                     <h1 className="dates">{getDay(thirdDate)}</h1>
                     <h2 className="title title-fc">{thirdMaxTempF} {thirdMaxTempC}</h2>
                      <img src={thirdIcon}/>
-                    <h3 className="subTitle-1">{thirdCondition}</h3>
+                    <h3 className="subTitle-1 condition-f">{thirdCondition}</h3>
                 </div>
             </div>
                 <div className="alert-container">

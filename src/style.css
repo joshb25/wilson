@@ -342,3 +342,48 @@ header {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 360px) {
+  header {
+    width: 100%;
+  }
+
+  .info-cont {
+    margin-top: 8.5em;
+    width: 95%;
+    height: 28%;
+  }
+
+  .country {
+    font-size: var(--fs-h3);
+  }
+
+  .additional-info {
+    font-size: var(--fs-h3);
+    width: 70%;
+    height: 10%;
+    border: hidden var(--fc-primary);
+    border-radius: 5px;
+    background-color: #36393a99;
+    position: absolute;
+    top: 290px;
+    left: 15%;
+  }
+
+  .humid,
+  .rain,
+  .wind {
+    border: none;
+  }
+
+  .two-day-forecast {
+    margin-top: 6em;
+    width: 100%;
+    height: 28.5%;
+    padding: 1em;
+  }
+
+  .condition-f {
+    font-size: 0.8rem;
+  }
+}

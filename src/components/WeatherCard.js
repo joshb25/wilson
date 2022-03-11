@@ -94,7 +94,7 @@ export default function WeatherCard({condition,code,icon,tempInF,feelsLikeF,temp
                 </div>
             </div>
                 <div className="alert-container">
-                {alert? <img src="/alert.png" className="alert-img"/>: null}    
+                {alert? <img src="./alert.png" className="alert-img"/>: null}    
                 <h1 className="alert">{alert}</h1>
                 </div>
                </div> 
